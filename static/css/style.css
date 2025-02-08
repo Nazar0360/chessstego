@@ -88,12 +88,15 @@ textarea:focus {
 	outline: none;
 }
 
-/* Add spacing between encode and decode sections */
-#fen-output,
-#pgn-output {
-	margin-bottom: 60px;
+#pgn-output,
+#pgn-decode-input {
+	height: 125px;
 }
 
+/* Add spacing between encode and decode sections */
+/* .result-field-container:has(#fen-output, #pgn-output) {
+	margin-bottom: 60px;
+} */
 
 /* Button Styling */
 button {
@@ -149,6 +152,24 @@ p {
 	background: rgba(52, 152, 219, 0.9);
 }
 
+/* Open Board Links Styling */
+.open-board {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 1rem;
+}
+
+.open-board a {
+	color: #007bff;
+	text-decoration: none;
+	font-weight: 600;
+	margin: 0 5px;
+	transition: text-decoration 0.3s;
+}
+
+.open-board a:hover {
+	text-decoration: underline;
+}
 
 /* Responsive Adjustments */
 @media (max-width: 600px) {

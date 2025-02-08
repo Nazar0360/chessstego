@@ -17,7 +17,8 @@
 		<!-- FEN Encoder/Decoder Section -->
 		<div class="section" id="fen-section">
 			<h2>FEN Encoder/Decoder</h2>
-			<p>This method encodes messages (only lowercase a–z, space, and backslash are allowed; maximum length is 38 characters) into a chess FEN string.</p>
+			<p>This method encodes messages (only lowercase a–z, space, and backslash are allowed; maximum length is 38
+				characters) into a chess FEN string.</p>
 			<div>
 				<label for="fen-input">Message to Encode (only a–z, space, and backslash):</label>
 				<input type="text" id="fen-input" placeholder="e.g. hello chess">
@@ -26,13 +27,20 @@
 			<div>
 				<label for="fen-output">Encoded FEN:</label>
 				<div class="result-field-container">
-					<textarea id="fen-output" readonly></textarea>
+					<input type="text" id="fen-output" readonly>
 					<button class="copy-button" onclick="copyToClipboard('fen-output', this)">[Copy]</button>
 				</div>
 			</div>
+			
+			<div class="open-board">
+				Open board:
+				<a href="https://www.chess.com/analysis" target="_blank">Chess.com</a> |
+				<a href="https://lichess.org/analysis" target="_blank">Lichess</a>
+			</div>
+			
 			<div>
 				<label for="fen-decode-input">FEN to Decode:</label>
-				<textarea id="fen-decode-input" placeholder="Paste FEN string here"></textarea>
+				<input type="text" id="fen-decode-input" placeholder="Paste FEN string here">
 				<button onclick="decodeFEN()">Decode from FEN</button>
 			</div>
 			<div>
@@ -49,7 +57,8 @@
 			<h2>PGN Encoder/Decoder</h2>
 			<p>
 				This method encodes any UTF‑8 text into a legal PGN game by compressing the message and embedding bits
-				into the move choices. Note that the PGN encoder may fail to encode some texts due to the specifics of the algorithm.
+				into the move choices. Note that the PGN encoder may fail to encode some texts due to the specifics of
+				the algorithm.
 			</p>
 			<div>
 				<label for="pgn-input">Message to Encode:</label>
@@ -63,6 +72,13 @@
 					<button class="copy-button" onclick="copyToClipboard('pgn-output', this)">[Copy]</button>
 				</div>
 			</div>
+
+			<div class="open-board">
+				Open board:
+				<a href="https://www.chess.com/analysis" target="_blank">Chess.com</a> |
+				<a href="https://lichess.org/analysis" target="_blank">Lichess</a>
+			</div>
+
 			<div>
 				<label for="pgn-decode-input">PGN to Decode:</label>
 				<textarea id="pgn-decode-input" placeholder="Paste PGN text here"></textarea>
@@ -80,7 +96,6 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.0.4/pako.min.js"></script>
-
 	<script src="js/fen.js"></script>
 	<script src="js/pgn.js"></script>
 	<script src="js/copy.js"></script>
