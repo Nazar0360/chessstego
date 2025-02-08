@@ -15,6 +15,12 @@ body {
 	line-height: 1.6;
 }
 
+input,
+button {
+	font-family: 'Montserrat', sans-serif;
+}
+
+
 /* Container for Centered Content */
 .container {
 	max-width: 960px;
@@ -185,13 +191,18 @@ p {
 		width: 100%;
 		padding: 12px;
 	}
-	
+
 	.copy-button {
 		position: relative;
 		bottom: 0;
 		right: 0;
 		background: rgb(52, 152, 219);
-		width: auto;
+		opacity: 1;
+		border-radius: 15px;
+		width: 80%;
 		height: 32.5px;
+		font-size: 1rem;
+		margin: 0 auto;
+		display: block;
 	}
 }

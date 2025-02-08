@@ -6,7 +6,7 @@ function copyToClipboard(elementId, btn) {
 	navigator.clipboard.writeText(text)
 		.then(() => {
 			const originalText = btn.innerText;
-			btn.innerText = "[Copied]";
+			btn.innerText = "Copied";
 			setTimeout(() => {
 				btn.innerText = originalText;
 			}, 1500);
