@@ -22,7 +22,7 @@ Both approaches allow you to transform an innocuous-looking chess position or ga
   - **Integration with python‑chess**: Ensures that the generated PGN represents a valid chess game.
 
 - **JavaScript Implementations**
-  - The repository also includes JavaScript versions of the FEN and PGN encoders/decoders.
+  - The repository also includes JavaScript versions of the FEN and PGN encoders/decoders (on the `gh-pages` branch).
   - A demo web page is available at [https://nazar0360.github.io/chessstego/](https://nazar0360.github.io/chessstego/).
 
 ---
