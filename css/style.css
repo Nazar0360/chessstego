@@ -185,4 +185,13 @@ p {
 		width: 100%;
 		padding: 12px;
 	}
+	
+	.copy-button {
+		position: relative;
+		bottom: 0;
+		right: 0;
+		background: rgb(52, 152, 219);
+		width: auto;
+		height: 32.5px;
+	}
 }
